@@ -1,0 +1,20 @@
+/* Estilos extraídos do arquivo original */
+body { 
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.bg-industrial { 
+    background-color: #0F172A; 
+}
+
+.text-accent { 
+    color: #F59E0B; 
+}
+
+.bg-accent { 
+    background-color: #F59E0B; 
+}
+
+.btn-gradient { 
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); 
+}

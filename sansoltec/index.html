@@ -11,27 +11,39 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     
-    <style>
-        body { font-family: 'Montserrat', sans-serif; }
-        .bg-industrial { background-color: #0F172A; }
-        .text-accent { color: #F59E0B; }
-        .bg-accent { background-color: #F59E0B; }
-        .btn-gradient { background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
     <header class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-md">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" 
+            x-data="{ activeSection: 'inicio' }" 
+            @scroll-spy.window="activeSection = $event.detail">
+            
             <div class="text-2xl font-extrabold text-slate-900 tracking-tighter">
                 SAN<span class="text-amber-500">SOL</span>TEC
             </div>
             
             <div class="hidden md:flex space-x-8 font-semibold text-gray-600">
-                <a href="#inicio" class="hover:text-amber-600 transition">Início</a>
-                <a href="#servicos" class="hover:text-amber-600 transition">Benefícios</a>
-                <a href="#portfolio" class="hover:text-amber-600 transition">Portfólio</a>
-                <a href="#contato" class="hover:text-amber-600 transition">Contato</a>
+                <a href="#inicio" 
+                @click="activeSection = 'inicio'" 
+                :class="activeSection === 'inicio' ? 'text-amber-600' : 'hover:text-amber-600'" 
+                class="transition">Início</a>
+                
+                <a href="#servicos" 
+                @click="activeSection = 'servicos'" 
+                :class="activeSection === 'servicos' ? 'text-amber-600' : 'hover:text-amber-600'" 
+                class="transition">Benefícios</a>
+                
+                <a href="#portfolio" 
+                @click="activeSection = 'portfolio'" 
+                :class="activeSection === 'portfolio' ? 'text-amber-600' : 'hover:text-amber-600'" 
+                class="transition">Portfólio</a>
+                
+                <a href="#contato" 
+                @click="activeSection = 'contato'" 
+                :class="activeSection === 'contato' ? 'text-amber-600' : 'hover:text-amber-600'" 
+                class="transition">Contato</a>
             </div>
 
             <a href="#contato" class="btn-gradient text-white px-6 py-2 rounded-lg font-bold transition transform hover:scale-105 shadow-lg">
@@ -149,10 +161,10 @@
                         <p class="text-gray-300 mb-10">Solicite um orçamento sem compromisso e veja como podemos otimizar sua planta.</p>
                         <div class="space-y-6">
                             <div class="flex items-center gap-4">
-                                <i data-lucide="phone" class="text-amber-500"></i> (93) 99182-3531
+                                <i data-lucide="phone" class="text-amber-500"></i> (93) 98814-3677
                             </div>
                             <div class="flex items-center gap-4">
-                                <i data-lucide="mail" class="text-amber-500"></i> contato@sansoltec.com.br
+                                <i data-lucide="mail" class="text-amber-500"></i> gh5857750@gmail.com
                             </div>
                         </div>
                     </div>
@@ -169,7 +181,7 @@
         </div>
     </section>
 
-    <a href="https://wa.me/5593991823531" target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition z-50">
+    <a href="https://wa.me/5593988143677" target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition z-50">
         <i data-lucide="message-circle" class="w-8 h-8"></i>
     </a>
 
@@ -179,16 +191,6 @@
         </div>
     </footer>
 
-    <script>
-        // Inicializa ícones
-        lucide.createIcons();
-
-        // Script de envio do formulário (simulação)
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-            this.reset();
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
