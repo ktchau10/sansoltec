@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sansoltec | Engenharia de Precisão e Infraestrutura</title>
+    
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-body">
+
+    <header class="main-header">
+        <nav class="nav-container" x-data="{ activeSection: 'inicio' }" @scroll-spy.window="activeSection = $event.detail">
+            
+            <div class="logo-text">
+                SAN<span class="text-accent">SOL</span>TEC
+            </div>
+            
+            <div class="nav-links hidden-mobile">
+                <a href="#inicio" @click="activeSection = 'inicio'" :class="activeSection === 'inicio' ? 'active' : ''" class="nav-link">Início</a>
+                <a href="#servicos" @click="activeSection = 'servicos'" :class="activeSection === 'servicos' ? 'active' : ''" class="nav-link">Benefícios</a>
+                <a href="#portfolio" @click="activeSection = 'portfolio'" :class="activeSection === 'portfolio' ? 'active' : ''" class="nav-link">Portfólio</a>
+                <a href="#contato" @click="activeSection = 'contato'" :class="activeSection === 'contato' ? 'active' : ''" class="nav-link">Contato</a>
+            </div>
+
+            <a href="#contato" class="btn-gradient">Solicitar Orçamento</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero-section">
+        <div class="container grid-2">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Engenharia de Precisão para <span class="text-accent">Potencializar</span> sua Indústria.
+                </h1>
+                <p class="hero-description">
+                    Da manutenção preditiva à automação complexa: soluções técnicas de alta performance que garantem a continuidade da sua operação.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn-accent-large">Solicitar Consultoria Técnica</a>
+                    <a href="#servicos" class="btn-outline-large">
+                        Ver Serviços <i data-lucide="arrow-down" class="icon-small"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80&w=800" alt="Engenharia Sansoltec">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="trusted-companies">
+        <div class="container">
+            <p class="section-tagline">Empresas que confiam na nossa excelência técnica</p>
+            <div class="logo-grid">
+                <img src="imagens/logo1.png" alt="Hospital Regional" class="client-logo">
+                <img src="imagens/logo2.jpg" alt="Hotel London" class="client-logo">
+                <img src="imagens/logo3.png" alt="MRN" class="client-logo">
+                <img src="imagens/logo4.png" alt="PresMed" class="client-logo">
+                <img src="imagens/logo5.png" alt="Pró-Saúde" class="client-logo">
+                <img src="imagens/logo6.png" alt="White Martins" class="client-logo">
+                <img src="imagens/logo7.png" alt="Yete" class="client-logo">
+                <img src="imagens/logo8.png" alt="Steic" class="client-logo">
+                <img src="imagens/logo9.jpg" alt="CEO Empreendimentos" class="client-logo">
+                <img src="imagens/logo10.png" alt="Maygas" class="client-logo">
+            </div>
+        </div>
+    </div>
+
+    <section id="servicos" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Soluções Focadas em Resultados</h2>
+                <p class="section-subtitle">Não entregamos apenas técnica, entregamos tranquilidade para o seu negócio crescer.</p>
+            </div>
+            
+            <div class="grid-4">
+                <div class="card-service">
+                    <i data-lucide="zap" class="icon-large text-accent"></i>
+                    <h3 class="card-title">Continuidade Operacional</h3>
+                    <p class="card-description">Reduza drasticamente paradas não programadas com nossa manutenção inteligente.</p>
+                </div>
+                <div class="card-service">
+                    <i data-lucide="cpu" class="icon-large text-accent"></i>
+                    <h3 class="card-title">Automação Industrial</h3>
+                    <p class="card-description">Modernize sua linha de produção com o que há de mais novo em controle.</p>
+                </div>
+                <div class="card-service">
+                    <i data-lucide="shield-check" class="icon-large text-accent"></i>
+                    <h3 class="card-title">Normas NR10/NR12</h3>
+                    <p class="card-description">Conformidade total para proteger seu maior patrimônio: as pessoas.</p>
+                </div>
+                <div class="card-service">
+                    <i data-lucide="bar-chart-3" class="icon-large text-accent"></i>
+                    <h3 class="card-title">Eficiência Energética</h3>
+                    <p class="card-description">Otimize o consumo e reduza custos fixos na sua fatura de energia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padding">
+        <div class="container">
+            <div class="contact-card">
+                <div class="grid-2">
+                    <div class="contact-info">
+                        <h2 class="contact-title">Vamos conversar?</h2>
+                        <p class="contact-text">Solicite um orçamento sem compromisso e veja como podemos otimizar sua planta.</p>
+                        <div class="contact-details">
+                            <div class="detail-item"><i data-lucide="phone" class="text-accent"></i> (93) 98814-3677</div>
+                            <div class="detail-item"><i data-lucide="mail" class="text-accent"></i> gh5857750@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="form-vertical">
+                            <input type="text" placeholder="Seu Nome" required class="input-field">
+                            <input type="email" placeholder="E-mail Corporativo" required class="input-field">
+                            <textarea placeholder="Como podemos ajudar?" rows="4" class="input-field"></textarea>
+                            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>© 2026 SANSOLTEC. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
