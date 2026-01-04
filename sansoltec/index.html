@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sansoltec | Engenharia de Precisão e Infraestrutura</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .bg-industrial { background-color: #0F172A; }
+        .text-accent { color: #F59E0B; }
+        .bg-accent { background-color: #F59E0B; }
+        .btn-gradient { background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-slate-900 tracking-tighter">
+                SAN<span class="text-amber-500">SOL</span>TEC
+            </div>
+            
+            <div class="hidden md:flex space-x-8 font-semibold text-gray-600">
+                <a href="#inicio" class="hover:text-amber-600 transition">Início</a>
+                <a href="#servicos" class="hover:text-amber-600 transition">Benefícios</a>
+                <a href="#portfolio" class="hover:text-amber-600 transition">Portfólio</a>
+                <a href="#contato" class="hover:text-amber-600 transition">Contato</a>
+            </div>
+
+            <a href="#contato" class="btn-gradient text-white px-6 py-2 rounded-lg font-bold transition transform hover:scale-105 shadow-lg">
+                Solicitar Orçamento
+            </a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="pt-32 pb-20 bg-industrial text-white overflow-hidden">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Engenharia de Precisão para <span class="text-amber-500">Potencializar</span> sua Indústria.
+                </h1>
+                <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                    Da manutenção preditiva à automação complexa: soluções técnicas de alta performance que garantem a continuidade da sua operação.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contato" class="bg-accent text-center px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition">Solicitar Consultoria Técnica</a>
+                    <a href="#servicos" class="border border-white/30 text-center px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition flex items-center justify-center gap-2">
+                        Ver Serviços <i data-lucide="arrow-down" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white/5 transform rotate-2">
+                    <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80&w=800" alt="Engenharia Sansoltec" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-white py-12 border-b">
+        <div class="container mx-auto px-6">
+            <p class="text-center text-gray-400 uppercase tracking-widest text-xs font-bold mb-8">Empresas que confiam na nossa excelência técnica</p>
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-70">
+                <img src="imagens/logo1.png" alt="." class="h-12 grayscale hover:grayscale-0 transition">
+                <img src="imagens/logo2.jpg" alt="." class="h-12 grayscale hover:grayscale-0 transition">
+                <img src="imagens/logo3.png" alt="." class="h-12 grayscale hover:grayscale-0 transition">
+                <img src="imagens/logo4.png" alt="." class="h-12 grayscale hover:grayscale-0 transition">
+                <img src="imagens/logo5.png" alt="." class="h-12 grayscale hover:grayscale-0 transition">
+                <img src="imagens/logo6.png" alt="." class="h-12 grayscale hover:grayscale-0 transition">
+                <img src="imagens/logo7.png" alt="." class="h-12 grayscale hover:grayscale-0 transition">
+                <img src="imagens/logo8.png" alt="." class="h-12 grayscale hover:grayscale-0 transition">
+                <img src="imagens/logo9.jpg" alt="." class="h-12 grayscale hover:grayscale-0 transition">
+                <img src="imagens/logo10.png" alt="." class="h-12 grayscale hover:grayscale-0 transition">
+            </div>
+        </div>
+    </div>
+
+    <section id="servicos" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Soluções Focadas em Resultados</h2>
+                <p class="text-gray-500 text-lg">Não entregamos apenas técnica, entregamos tranquilidade para o seu negócio crescer.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:border-amber-500 transition-all group">
+                    <i data-lucide="zap" class="w-12 h-12 text-amber-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Continuidade Operacional</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Reduza drasticamente paradas não programadas com nossa manutenção inteligente.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:border-amber-500 transition-all group">
+                    <i data-lucide="cpu" class="w-12 h-12 text-amber-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Automação Industrial</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Modernize sua linha de produção com o que há de mais novo em controle.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:border-amber-500 transition-all group">
+                    <i data-lucide="shield-check" class="w-12 h-12 text-amber-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Normas NR10/NR12</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Conformidade total para proteger seu maior patrimônio: as pessoas.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:border-amber-500 transition-all group">
+                    <i data-lucide="bar-chart-3" class="w-12 h-12 text-amber-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Eficiência Energética</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Otimize o consumo e reduza custos fixos na sua fatura de energia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl font-bold text-center mb-12">Dúvidas Frequentes</h2>
+            <div x-data="{ active: 1 }" class="space-y-4">
+                <div class="bg-white rounded-xl shadow-sm">
+                    <button @click="active = (active === 1 ? null : 1)" class="w-full px-6 py-5 text-left font-bold flex justify-between items-center text-slate-800">
+                        A Sansoltec emite ART?
+                        <i data-lucide="chevron-down" :class="active === 1 ? 'rotate-180' : ''" class="transition-transform"></i>
+                    </button>
+                    <div x-show="active === 1" x-collapse class="px-6 pb-5 text-gray-600">
+                        Sim, todos os nossos projetos e execuções são acompanhados por engenheiros responsáveis registrados no CREA.
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm">
+                    <button @click="active = (active === 2 ? null : 2)" class="w-full px-6 py-5 text-left font-bold flex justify-between items-center text-slate-800">
+                        Quais setores vocês atendem?
+                        <i data-lucide="chevron-down" :class="active === 2 ? 'rotate-180' : ''" class="transition-transform"></i>
+                    </button>
+                    <div x-show="active === 2" x-collapse class="px-6 pb-5 text-gray-600">
+                        Atendemos indústrias, centros comerciais e condomínios de grande porte em todo o Brasil.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto bg-industrial rounded-[2rem] overflow-hidden shadow-2xl flex flex-col md:row text-white">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-12 bg-slate-800/50">
+                        <h2 class="text-3xl font-bold mb-6 text-amber-500">Vamos conversar?</h2>
+                        <p class="text-gray-300 mb-10">Solicite um orçamento sem compromisso e veja como podemos otimizar sua planta.</p>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <i data-lucide="phone" class="text-amber-500"></i> (93) 99182-3531
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i data-lucide="mail" class="text-amber-500"></i> contato@sansoltec.com.br
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-12 bg-white text-gray-900">
+                        <form id="contactForm" class="space-y-4">
+                            <input type="text" placeholder="Seu Nome" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none">
+                            <input type="email" placeholder="E-mail Corporativo" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none">
+                            <textarea placeholder="Como podemos ajudar?" rows="4" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none"></textarea>
+                            <button type="submit" class="w-full bg-amber-500 text-white font-bold py-4 rounded-lg hover:bg-amber-600 transition">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/5593991823531" target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition z-50">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <footer class="bg-slate-900 text-gray-500 py-12">
+        <div class="container mx-auto px-6 text-center border-t border-white/5 pt-8">
+            <p class="text-sm">© 2026 SANSOLTEC. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializa ícones
+        lucide.createIcons();
+
+        // Script de envio do formulário (simulação)
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
